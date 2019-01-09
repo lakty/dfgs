@@ -1,0 +1,59 @@
+{% macro render_field(field) %}
+    <div class="form-group col-md-4">
+        <label for="exampleInputPassword1">{{ field.label.text }}</label>
+        {{ field(placeholder=field.label.text,**kwargs)|safe }}
+    {% if field.errors %}
+        <ul class=errors>
+            {% for error in field.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    </div>
+{% endmacro %}
+{% extends "index.html" %}
+{% block content %}
+    <div class="col-md-12 bg-light content">
+        <form action="/" method="post">
+            <h4 class="my-3">Дані на особу</h4>
+            <div class="row col-md-12">
+                {{ render_field(data_form.last_name, class="form-control") }}
+                {{ render_field(data_form.first_name, class="form-control") }}
+                {{ render_field(data_form.middle_name, class="form-control") }}
+            </div>
+            <div class="row col-md-12">
+                {{ render_field(data_form.date_birthday, class="form-control") }}
+                {{ render_field(data_form.document, class="form-control") }}
+                {{ render_field(data_form.reg_place, class="form-control") }}
+            </div>
+            <div class="row col-md-12">
+                {{ render_field(data_form.date_time_event, class="form-control", value = data_time) }}
+                {{ render_field(data_form.place_event, class="form-control") }}
+                {{ render_field(data_form.vehicle, class="form-control") }}
+            </div>
+            <div class="row col-md-12">
+                {{ render_field(data_form.incident, class="form-control") }}
+                {{ render_field(data_form.witness, class="form-control") }}
+                {{ render_field(data_form.fine, class="form-control") }}
+            </div>
+            <div class="row col-md-12">
+                {{ data_form.submit( class_='btn  btn-outline-primary my-4', value="Переглянути") }}
+            </div>
+        </form>
+    </div>
+    <script>
+        const incident_select = document.getElementById("incident");
+        const fine_select = document.getElementById("fine");
+        incident_select.onchange = function()  {
+
+            const incident = incident_select.value;
+
+            fetch('/fine/' + incident).then(function(response) {
+                response.json().then(function(data) {
+                    fine_select.value=data.value;
+                })
+
+            });
+        }
+    </script>
+{% endblock %}
