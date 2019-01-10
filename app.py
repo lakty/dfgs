@@ -23,6 +23,7 @@ def crib_form():
             "date_time_event": data_form.date_time_event.data,
             "place_event": data_form.place_event.data,
             "vehicle": data_form.vehicle.data,
+            "incident_pdd": [key  for (key, value) in events.items() if value == data_form.incident.data],
             "incident": data_form.incident.data,
             "witness": data_form.witness.data,
             "fine": data_form.fine.data,
