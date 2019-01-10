@@ -1,3 +1,4 @@
+{% extends "index.html" %}
 {% macro render_field(field) %}
     <div class="form-group">
         <label for="exampleInputPassword1">{{ field.label.text }}</label>
@@ -11,75 +12,71 @@
         {% endif %}
     </div>
 {% endmacro %}
-{% extends "index.html" %}
 {% block content %}
-        <div class="row card-deckr">
+    <div class="row">
         <form method="post" action="">
-            <div class="col-md-12 order-md-2 bg-light card">
+            <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-8">
-                    <h4 class="my-3">Дані на особу</h4>
-                <div class="row col-md-12">
-                    <div class="col-md-4">
-                        {{ render_field(data_form.last_name, class="form-control") }}
+                    <div class="col-md-8 card">
+                        <h4 class="my-3">Дані на особу</h4>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    {{ render_field(data_form.last_name, class="form-control") }}
+                                </div>
+                                <div class="col-md-4">
+                                    {{ render_field(data_form.first_name, class="form-control") }}
+                                </div>
+                                <div class="col-md-4">
+                                    {{ render_field(data_form.middle_name, class="form-control") }}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    {{ render_field(data_form.date_birthday, class="form-control") }}
+                                </div>
+                                <div class="col-md-4">
+                                    {{ render_field(data_form.document, class="form-control") }}
+                                </div>
+                                <div class="col-md-4">
+                                    {{ render_field(data_form.reg_place, class="form-control") }}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    {{ render_field(data_form.date_time_event, class="form-control", value = data_time) }}
+                                </div>
+                                <div class="col-md-4">
+                                    {{ render_field(data_form.place_event, class="form-control") }}
+                                </div>
+                                <div class="col-md-4">
+                                    {{ render_field(data_form.vehicle, class="form-control") }}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    {{ render_field(data_form.incident, class="form-control") }}
+                                </div>
+                                <div class="col-md-4">
+                                    {{ render_field(data_form.witness, class="form-control") }}
+                                </div>
+                                <div class="col-md-4">
+                                    {{ render_field(data_form.fine, class="form-control") }}
+                                </div>
+                            </div>
+                            {{ data_form.submit( class_='btn  btn-outline-primary my-4', value="Переглянути") }}
                     </div>
-                    <div class="col-md-4">
-                        {{ render_field(data_form.first_name, class="form-control") }}
-                    </div>
-                    <div class="col-md-4">
-                        {{ render_field(data_form.middle_name, class="form-control") }}
+                    <div class="col-md-4 card">
+                        <div class="col-md-12">
+                            <h4 class="my-3">Патрульный</h4>
+                            {{ render_field(data_form.police_bio, class="form-control") }}
+                            {{ render_field(data_form.police_rang, class="form-control") }}
+                            {{ render_field(data_form.police_position, class="form-control") }}
+                        </div>
                     </div>
                 </div>
-                <div class="row col-md-12">
-                    <div class="col-md-4">
-                        {{ render_field(data_form.date_birthday, class="form-control") }}
-                    </div>
-                    <div class="col-md-4">
-                        {{ render_field(data_form.document, class="form-control") }}
-                    </div>
-                    <div class="col-md-4">
-                        {{ render_field(data_form.reg_place, class="form-control") }}
-                    </div>
-                </div>
-                <div class="row col-md-12">
-                    <div class="col-md-4">
-                        {{ render_field(data_form.date_time_event, class="form-control", value = data_time) }}
-                    </div>
-                    <div class="col-md-4">
-                        {{ render_field(data_form.place_event, class="form-control") }}
-                    </div>
-                    <div class="col-md-4">
-                        {{ render_field(data_form.vehicle, class="form-control") }}
-                    </div>
-                </div>
-                <div class="row col-md-12">
-                    <div class="col-md-4">
-                        {{ render_field(data_form.incident, class="form-control") }}
-                    </div>
-                    <div class="col-md-4">
-                        {{ render_field(data_form.witness, class="form-control") }}
-                    </div>
-                    <div class="col-md-4">
-                        {{ render_field(data_form.fine, class="form-control") }}
-                    </div>
-                </div>
-                <div class="row col-md-12">
-                    {{ data_form.submit( class_='btn  btn-outline-primary my-4', value="Переглянути") }}
-                </div>
-                </div>
-                <div class="col-md-4">
-                     <div class="col-md-12">
-                         <h4 class="my-3">Патрульный</h4>
-                    {{ render_field(data_form.police_bio, class="form-control") }}
-                    {{ render_field(data_form.police_rang, class="form-control") }}
-                    {{ render_field(data_form.police_position, class="form-control") }}
-                </div>
-                </div>
-                </div>
-
             </div>
-            </form>
-        </div>
+        </form>
+    </div>
     <script>
         const incident_select = document.getElementById("incident");
         const fine_select = document.getElementById("fine");

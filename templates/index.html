@@ -8,8 +8,11 @@
     <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
 </head>
-<body class="bg-primary">
-<div class="container mt-5">
+<body class="bg-info">
+<div class="container text-center mt-5 text-dark font-weight-bold">
+    <legend>ТРЕНІНГОВИЙ ЦЕНТР <br>ГУНП В ХЕРСОНСЬКІЙ ОБЛАСТІ</legend>
+</div>
+<div class="container mt-5 ">
     {% block content %}{% endblock %}
     {% with messages = get_flashed_messages(with_categories=true) %}
     {% if messages %}

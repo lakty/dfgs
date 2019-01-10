@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, jsonify, redirect, url_for
 from config import Config
 from constant import events, fine
 import datetime
-import json
 import forms
 
 app = Flask(__name__)

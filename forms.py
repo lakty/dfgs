@@ -4,6 +4,18 @@ from wtforms import StringField, DateTimeField, SelectField, SubmitField
 from wtforms.validators import DataRequired, Length
 from wtforms.fields.html5 import DateField
 
+ranges = ["Полковник поліції",
+          "Підполковник поліції",
+          "Майор поліції",
+          "Капітан поліції",
+          "Старший лейтенант поліції",
+          "Лейтенант поліції",
+          "Молодший лейтенант поліції",
+          "Старший сержант поліції",
+          "Сержант поліції",
+          "Капрал поліції",
+          "Рядовий поліції"]
+
 
 class CribForm(FlaskForm):
     first_name = StringField("Ім\'я", validators=[DataRequired()])
@@ -20,6 +32,7 @@ class CribForm(FlaskForm):
     witness = StringField("ПІБ свідка", validators=[DataRequired()])
     fine = StringField("Cтягнення", validators=[DataRequired()])
     police_bio = StringField("ПІБ", validators=[DataRequired()])
-    police_rang = StringField("Спеціальне звання", validators=[DataRequired()])
+    police_rang = SelectField("Спеціальне звання", choices=[(rang, rang) for rang in ranges],
+                              validators=[DataRequired()])
     police_position = StringField("Посада", validators=[DataRequired()])
     submit = SubmitField("Переглянути")
