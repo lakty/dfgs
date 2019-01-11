@@ -54,7 +54,7 @@ def crib():
         "witness": "witness",
         "fine": "fine",
         "police_bio": "police_bio",
-        "police_rang": "police_bio",
+        "police_rang": "police_rang",
         "police_position": "police_position"
     }
     return render_template("crib/index.html", input_data=input_data)
