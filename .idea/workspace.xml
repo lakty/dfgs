@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ecb05307-c952-4379-8a90-0aeafc7d41a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/crib/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/crib/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/crib_form/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/crib_form/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,10 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="55" column="19" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="19" />
-              <caret line="56" column="20" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="20" />
-              <caret line="57" column="24" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="24" />
+            <state relative-caret-position="465">
+              <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
               <folding>
                 <element signature="e#0#77#0" expanded="true" />
               </folding>
@@ -73,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/crib/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+            <state relative-caret-position="327">
+              <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -260,7 +254,7 @@
       <updated>1547059952215</updated>
       <workItem from="1547059953439" duration="14388000" />
       <workItem from="1547112537519" duration="7684000" />
-      <workItem from="1547140367629" duration="6196000" />
+      <workItem from="1547140367629" duration="8508000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил вторую страницу">
       <created>1547138096730</created>
@@ -283,31 +277,44 @@
       <option name="project" value="LOCAL" />
       <updated>1547142232450</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Поменял цвет">
+      <created>1547205729432</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1547205729432</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Поменял цвет">
+      <created>1547210692323</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1547210692324</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28268000" />
+    <option name="totallyTimeSpent" value="30580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.32771084" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.32771084" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49928468" weight="0.32891566" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4985694" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50143063" side_tool="true" visible="true" weight="0.32771084" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49785408" weight="0.32771084" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5035765" side_tool="true" visible="true" weight="0.32771084" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49642345" visible="true" weight="0.32771084" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -397,10 +404,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="55" column="19" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="19" />
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="20" />
-          <caret line="57" column="24" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="24" />
+        <state relative-caret-position="465">
+          <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
           <folding>
             <element signature="e#0#77#0" expanded="true" />
           </folding>
@@ -409,8 +414,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/crib/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+        <state relative-caret-position="327">
+          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
         </state>
       </provider>
     </entry>

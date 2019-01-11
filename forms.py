@@ -1,8 +1,8 @@
 from flask_wtf import FlaskForm
 from constant import events
-from wtforms import StringField, DateTimeField, SelectField, SubmitField
+from wtforms import StringField, SelectField, SubmitField
 from wtforms.validators import DataRequired, Length
-from wtforms.fields.html5 import DateField
+from wtforms.fields.html5 import DateField, DateTimeField
 
 ranges = ["Полковник поліції",
           "Підполковник поліції",

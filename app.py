@@ -11,7 +11,7 @@ app.config.from_object(Config)
 @app.route('/', methods=['GET', 'POST'])
 def crib_form():
     data_form = forms.CribForm(request.form)
-    data_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    data_time = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     if request.method == 'POST' and data_form.is_submitted():
         input_data = {
             "first_name": data_form.first_name.data,
