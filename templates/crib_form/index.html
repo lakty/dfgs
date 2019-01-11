@@ -81,15 +81,7 @@
         const incident_select = document.getElementById("incident");
         const fine_select = document.getElementById("fine");
         incident_select.onchange = function()  {
-
-            const incident = incident_select.value;
-
-            fetch('/fine/' + incident).then(function(response) {
-                response.json().then(function(data) {
-                    fine_select.value=data.value;
-                })
-
-            });
+            fine_select.value=incident_select.value;
         }
     </script>
 {% endblock %}

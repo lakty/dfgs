@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify, redirect, url_for
 from config import Config
-from constant import events, fine
+from constant import events
 import datetime
 import forms
 
@@ -23,7 +23,7 @@ def crib_form():
             "date_time_event": data_form.date_time_event.data,
             "place_event": data_form.place_event.data,
             "vehicle": data_form.vehicle.data,
-            "incident_pdd": [key  for (key, value) in events.items() if value == data_form.incident.data],
+            "incident_pdd": [key for (key, value) in events.items() if value == data_form.incident.data],
             "incident": data_form.incident.data,
             "witness": data_form.witness.data,
             "fine": data_form.fine.data,
@@ -37,13 +37,27 @@ def crib_form():
     return render_template("crib_form/index.html", data_form=data_form, data_time=data_time)
 
 
-@app.route('/fine/<incident>')
-def func_fine(incident):
-    _fine = fine[incident]
-    print(_fine)
-    fineObj = _fine
-
-    return jsonify({'value': fineObj})
+@app.route('/crib')
+def crib():
+    input_data = {
+        "first_name": "first_name",
+        "last_name": "last_name",
+        "middle_name": "middle_name",
+        "date_birthday": "date_birthday",
+        "document": "document",
+        "reg_place": "reg_place",
+        "date_time_event": "date_time_event",
+        "place_event": "place_event",
+        "vehicle": "vehicle",
+        "incident_pdd": "incident_pdd",
+        "incident": "incident",
+        "witness": "witness",
+        "fine": "fine",
+        "police_bio": "police_bio",
+        "police_rang": "police_bio",
+        "police_position": "police_position"
+    }
+    return render_template("crib/index.html", input_data=input_data)
 
 
 if __name__ == '__main__':
