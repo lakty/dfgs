@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
 from constant import events
-from wtforms import StringField, SelectField, SubmitField
+from wtforms import StringField, SelectField, SubmitField, HiddenField
 from wtforms.validators import DataRequired, Length
 from wtforms.fields.html5 import DateField, DateTimeField
 
@@ -27,6 +27,7 @@ class CribForm(FlaskForm):
     date_time_event = DateTimeField("Дата(час) розгляду", validators=[DataRequired()])
     place_event = StringField("Місце розгляду", validators=[DataRequired()])
     vehicle = StringField("Транспортний засіб", validators=[DataRequired()])
+    incident_admin = HiddenField()
     incident = SelectField("Порушення ПДР", validators=[DataRequired()],
                            choices=[("", "Порушення"), *[(events[event], event) for event in events.keys()]])
     witness = StringField("ПІБ свідка", validators=[DataRequired()])

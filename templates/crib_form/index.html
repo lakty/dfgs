@@ -56,6 +56,7 @@
                                 <div class="col-md-4">
                                     {{ render_field(data_form.incident, class="form-control") }}
                                 </div>
+                                {{ data_form.incident_admin }}
                                 <div class="col-md-4">
                                     {{ render_field(data_form.witness, class="form-control") }}
                                 </div>
@@ -80,8 +81,11 @@
     <script>
         const incident_select = document.getElementById("incident");
         const fine_select = document.getElementById("fine");
-        incident_select.onchange = function()  {
+        const incident_admin = document.getElementById("incident_admin");
+        incident_select.onchange = function(e)  {
             fine_select.value=incident_select.value;
+            const fine_select_text = document.getElementById('incident').selectedOptions[0].text;
+            incident_admin.value = fine_select_text;
         }
     </script>
 {% endblock %}
