@@ -27,7 +27,6 @@ class CribForm(FlaskForm):
     date_time_event = DateTimeField("Дата(час) розгляду", validators=[DataRequired()])
     place_event = StringField("Місце розгляду", validators=[DataRequired()])
     vehicle = StringField("Транспортний засіб", validators=[DataRequired()])
-    incident_admin = HiddenField()
     incident = SelectField("Порушення ПДР", validators=[DataRequired()],
                            choices=[("", "Порушення"), *[(events[event], event) for event in events.keys()]])
     witness = StringField("ПІБ свідка", validators=[DataRequired()])
