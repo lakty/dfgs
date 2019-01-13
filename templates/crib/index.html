@@ -26,7 +26,7 @@
             <li class="list-group-item">дата(час) розгляду {{ input_data['date_time_event'] }}</li>
             <li class="list-group-item">місце розгляду {{ input_data['place_event'] }}</li>
             <li class="list-group-item">транспортний засіб {{ input_data['vehicle'] }}</li>
-            <li class="list-group-item">порушення ПДР {{ input_data['fine'] }} {{ input_data['incident_pdd'] }}</li>
+            <li class="list-group-item">порушення ПДР {{ input_data['incident'] }}</li>
             <li class="list-group-item">свідки {{ input_data['witness'] }}</li>
             <li class="list-group-item">стягнення {{ input_data['fine'] }}</li>
         </ul>
@@ -34,12 +34,12 @@
             що порушив вимогу {{ input_data['incident_pdd'] }} та {{ input_data['incident'] }}
             Під час розгляду справи присутні: особа  відносно якої відкрите адміністративне провадження
             {{ input_data['last_name'] }} {{ input_data['first_name'] }} {{ input_data['middle_name'] }}, свідки  {{ input_data['witness'] }}, особа яка розглядає справу {{ input_data['police_rang'] }} {{ input_data['police_bio'] }}
-            Розяснюю права особи, яка притягається до адміністративної віповідальності {{ input_data['fine'] }}</p>
+            Розяснюю права особи, яка притягається до адміністративної віповідальності {{ input_data['incident'] }}</p>
         <p class="text-danger text-center">Відповідно до постанови КМУ № 1363 від 28 грудня 2011 р. ( безоплатна правова  допомога надається в рамках адміністративного затримання, затримання за підозру вчинення злочину , затримання на підставі ухвали слідчого судді,  суду про дозвіл на затримання з метою приводу)</p>
         <p class="text-center text-dark">{{ input_data['last_name'] }} {{ input_data['first_name'] }} {{ input_data['middle_name'] }} {{ input_data['witness'] }} бажаєте подати клопотання ?
             <br>Оголошується зміст адміністративного провадження: {{ input_data['date_time_event'] }} за адресою : м. Херсон вул. Патона 13 громадяни	{{ input_data['first_name'] }} {{ input_data['last_name'] }} {{ input_data['middle_name'] }} {{ input_data['date_birthday'] }}зареєстрований за адресою:{{ input_data['reg_place'] }}керуючи	транспортним засобом {{ input_data['vehicle'] }} д/н 4435 {{ input_data['incident'] }}</p>
         <p>Особа яка притягується до адміністративної відповідальності {{ input_data['last_name'] }} {{ input_data['first_name'] }} {{ input_data['middle_name'] }} {{ input_data['date_birthday'] }} відмовилась (погодилась)  надавати, як доказ відео з власного відеореєтратора, пояснення, клопотання. Розглянувши матеріали справи (ст. 251 КУпАП) фактичні дані (відео з "боді камери", пояснення, рапорта ) Заслухавши покази свідків: {{ input_data['police_position'] }} {{ input_data['police_rang'] }} {{ input_data['police_bio'] }}. Керуючись внутрішнім переконанням, що ґрунтується на всебічному повному і об’єктивному досліджені всіх обставин  справи в їх сукупності, керуючись законом і правосвідомістю</p>
         <p class="text-danger text-center">ПОСТАНОВИВ</p>
-        <p class="text-danger text-center"><br> Притягнути {{ input_data['last_name'] }} {{ input_data['first_name'] }} {{ input_data['middle_name'] }} {{ input_data['date_birthday'] }}  за те, що вище вказаний громадянин порушив вимогу {{ input_data['incident'] }} відповідно визнати особу відносно якої розглядалась справа винною, у вчинені адміністративного правопорушення, та накласти адміністративне стягнення у вигляді {{ input_data['incident'] }} Згідно ст. 292 КУпАП постанова може бути оскаржена в десятиденний строк</p>
+        <p class="text-danger text-center"><br> Притягнути {{ input_data['last_name'] }} {{ input_data['first_name'] }} {{ input_data['middle_name'] }} {{ input_data['date_birthday'] }}  за те, що вище вказаний громадянин порушив вимогу {{ input_data['incident'] }} відповідно визнати особу відносно якої розглядалась справа винною, у вчинені адміністративного правопорушення, та накласти адміністративне стягнення у вигляді {{ input_data['fine'] }} Згідно ст. 292 КУпАП постанова може бути оскаржена в десятиденний строк</p>
     </div>
 {% endblock %}
