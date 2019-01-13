@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecb05307-c952-4379-8a90-0aeafc7d41a4" name="Default Changelist" comment="Добавил favicon">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/crib/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/crib/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="ecb05307-c952-4379-8a90-0aeafc7d41a4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/crib/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="203" selection-start-line="35" selection-start-column="203" selection-end-line="35" selection-end-column="203" />
+            <state relative-caret-position="385">
+              <caret line="42" column="444" selection-start-line="42" selection-start-column="444" selection-end-line="42" selection-end-column="444" />
             </state>
           </provider>
         </entry>
@@ -118,6 +115,8 @@
       <find>incide</find>
       <find>}} {{</find>
       <find>}}{{</find>
+      <find>pdd</find>
+      <find>fine</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -279,7 +278,7 @@
       <workItem from="1547242791023" duration="26000" />
       <workItem from="1547242840758" duration="1729000" />
       <workItem from="1547245217034" duration="1006000" />
-      <workItem from="1547247965934" duration="3051000" />
+      <workItem from="1547247965934" duration="3325000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил вторую страницу">
       <created>1547138096730</created>
@@ -386,15 +385,28 @@
       <option name="project" value="LOCAL" />
       <updated>1547391343212</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Ошибки в тексте">
+      <created>1547391668931</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1547391668931</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Ошибки в тексте">
+      <created>1547391804562</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1547391804562</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40097000" />
+    <option name="totallyTimeSpent" value="40371000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -451,7 +463,8 @@
     <MESSAGE value="Поменял местами first i last name" />
     <MESSAGE value="Пофиксил дату события" />
     <MESSAGE value="Добавил favicon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил favicon" />
+    <MESSAGE value="Ошибки в тексте" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ошибки в тексте" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
@@ -542,8 +555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/crib/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="203" selection-start-line="35" selection-start-column="203" selection-end-line="35" selection-end-column="203" />
+        <state relative-caret-position="385">
+          <caret line="42" column="444" selection-start-line="42" selection-start-column="444" selection-end-line="42" selection-end-column="444" />
         </state>
       </provider>
     </entry>
