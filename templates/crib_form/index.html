@@ -81,7 +81,9 @@
         const incident_select = document.getElementById("incident");
         const fine_select = document.getElementById("fine");
         incident_select.onchange = function()  {
+            const select_text = incident_select.selectedOptions[0].text;
             fine_select.value=incident_select.value;
+            incident_select.selectedOptions[0].value = select_text;
         }
     </script>
 {% endblock %}
