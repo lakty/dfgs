@@ -24,7 +24,7 @@ class CribForm(FlaskForm):
     date_birthday = DateField("Дата народження")
     document = StringField("Документ", validators=[DataRequired()])
     reg_place = StringField("Зареєстрований", validators=[DataRequired()])
-    date_time_event = DateTimeField("Дата(час) розгляду", validators=[DataRequired()])
+    date_time_event = StringField("Дата(час) розгляду", validators=[DataRequired()])
     place_event = StringField("Місце розгляду", validators=[DataRequired()])
     vehicle = StringField("Транспортний засіб", validators=[DataRequired()])
     incident = SelectField("Порушення ПДР", validators=[DataRequired()],
