@@ -19,7 +19,7 @@ def check():
 @app.route('/', methods=['GET', 'POST'])
 def crib_form():
     data_form = forms.CribForm(request.form)
-    data_time = datetime.datetime.now(pytz.timezone('Europe/Kiev')).strftime("%d-%m-%Y %H:%M:%S")
+    data_time = datetime.datetime.now(pytz.timezone('Etc/GMT-4')).strftime("%d-%m-%Y %H:%M:%S")
     if request.method == 'POST' and data_form.is_submitted():
         input_data = {
             "first_name": data_form.first_name.data,
